@@ -37,7 +37,7 @@ The level of access to cloud services will determine whether a user has access t
 In many cases, users and automated processes will simply operate within the environment and components
 that have been made available.
 
-* See [Accounts and IAM](accounts-iam).
+* See [Accounts and IAM](accounts-iam.md).
 
 ### Storage ###
 
@@ -46,7 +46,7 @@ Files from a local computer can be uploaded and downloaded using the `gcloud` so
 Buckets can be mapped to internet domain addresses to provide static websites.
 
 * See [Choosing a Storage Option](https://cloud.google.com/storage-options/)
-* [Storage](storage).
+* [Storage](storage.md).
 
 ### Computing (Virtual Machines) ###
 
@@ -55,7 +55,7 @@ Although Microsoft servers may be used, Linux is typically less expensive and pr
 Direct access to a virtual machine is provided though `ssh`, for example to install and configure software.
 
 * See [Google Compute Engine Documentation](https://cloud.google.com/compute/docs/)
-* [Virtual Machines](vm)
+* [Virtual Machines](vm.md)
 
 ### Databases ###
 
@@ -68,7 +68,7 @@ Various database services can be enabled as needed.
 Websites can be hosted in various ways.
 
 * See [Serving Websites](https://cloud.google.com/solutions/web-serving-overview)
-* [Websites](website)
+* [Websites](website.md)
 
 ## Alternatives to GCP ##
 
