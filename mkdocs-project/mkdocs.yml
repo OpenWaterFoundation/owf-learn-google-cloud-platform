@@ -3,7 +3,7 @@
 # Reference: http://www.mkdocs.org/user-guide/configuration/
 #
 site_name: Learn / Google Cloud Platform
-pages:
+nav:
 - Home: index.md
 - Introduction: introduction.md
 - Getting Started: getting-started.md
@@ -16,8 +16,19 @@ pages:
 - Examples for Common Tasks: common-tasks.md
 - GCP Best Practices: best-practices.md
 - Troubleshooting: troubleshooting/troubleshooting.md
+- Command Line Interface: cli/cli.md
 - Resources: resources.md
 # ------- configuration properties ---------------
+copyright:  Copyright Open Water Foundation
+# Use extra CSS to customize styles, based on theme.
+extra_css:
+  - 'css/extra-material-theme.css'
+# ------------------------------------------------
+# Google Analytics
+# - see:  https://squidfunk.github.io/mkdocs-material/getting-started/#google-analytics
+google_analytics:
+ - 'UA-135465513-1'
+ - auto
 # Use Material theme
 # - installation notes:  https://github.com/squidfunk/mkdocs-material
 theme: material
@@ -25,9 +36,8 @@ theme: material
 #repo_url:  https://github.com/OpenWaterFoundation/owf-learn-ckan
 site_description:  Open Water Foundation Learn GCP
 site_author:  Open Water Foundation
-site_favicon:  'images/OWF-Logo-Favicon-32x32.png'
-copyright:  Copyright Open Water Foundation
-# Extra options
-# Use extra CSS to customize styles, based on theme
-extra_css:
-- 'css/extra-material-theme.css'
+# Use Material theme
+# - installation notes:  https://github.com/squidfunk/mkdocs-material
+theme:
+  name: material
+  favicon:  'images/OWF-Logo-Favicon-32x32.png'

@@ -9,12 +9,12 @@ This documentation has been written based on experience using GCP at the Open Wa
 
 ## About the Open Water Foundation ##
 
-The [Open Water Foundation](http://openwaterfoundation.org) is a 501(c)3 nonprofit social enterprise that focuses
+The [Open Water Foundation](https://openwaterfoundation.org) is a 501(c)3 nonprofit social enterprise that focuses
 on developing and supporting open source software for water resources, so that organizations can make better decisions about water.
 OWF also works to advance open data tools and implementation.
 OWF has created this documentation to educate its staff, collaborators, and clients that use GCP.
 
-See also other [OWF learning resources](http://learn.openwaterfoundation.org).
+See also other [OWF learning resources](https://learn.openwaterfoundation.org).
 
 ## How to Use this Documentation ##
 
@@ -22,7 +22,7 @@ The documentation is organized in order of information and tasks necessary to us
 
 This documentation is not intended to be a full reference for GCP but focuses on topics that
 will help understand important technical concepts and be successful with GCP.
-See the [Resources section](resources) for general information about GCP.
+See the [Resources section](resources.md) for general information about GCP.
 
 Use the navigation menu provided on the left side of the page to navigate the documentation sections within the full document.
 Use the navigation menu provided on the right side of the page to navigate the documentation sections with a page.
