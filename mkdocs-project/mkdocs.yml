@@ -9,14 +9,14 @@ nav:
 - Getting Started: getting-started.md
 - GCP Accounts and IAM: accounts-iam.md
 - GCP Console & Dashboard: console-dashboard.md
-- gcloud Tools: gcloud.md
 - Storage: storage.md
 - Virtual Machines: vm.md
 - Websites: website.md
+- Analytics: analytics/analytics.md
+- Command Line Interface: cli/cli.md
 - Examples for Common Tasks: common-tasks.md
 - GCP Best Practices: best-practices.md
 - Troubleshooting: troubleshooting/troubleshooting.md
-- Command Line Interface: cli/cli.md
 - Resources: resources.md
 # ------- configuration properties ---------------
 copyright:  Copyright Open Water Foundation

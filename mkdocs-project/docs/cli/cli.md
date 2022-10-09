@@ -12,6 +12,13 @@ This documentation explains how to install and use the Google Cloud Command Line
 
 The Google Cloud Command Line Interface (CLI) can be run
 on the command line to automate tasks.
+This includes the `gcloud` and `gutil` commands. See:
+
+* [Cloud SDK](https://cloud.google.com/sdk/) 
+* [Cloud SDK docs](https://cloud.google.com/sdk/docs/)
+* [`gcloud`](https://cloud.google.com/sdk/gcloud/reference) - manage Google Cloud resources
+* [`gsutil`](https://cloud.google.com/storage/docs/gsutil) - to interface with storage
+* [`bq`](https://cloud.google.com/bigquery/bq-command-line-tool) - query tool for BigQuery
 
 ## Installation (Windows) ##
 
