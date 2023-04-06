@@ -3,20 +3,21 @@
 # Reference: http://www.mkdocs.org/user-guide/configuration/
 #
 site_name: Learn / Google Cloud Platform
+# For now the documentation is minimal and provides useful information for OWF.
 nav:
 - Home: index.md
 - Introduction: introduction.md
-- Getting Started: getting-started.md
-- GCP Accounts and IAM: accounts-iam.md
-- GCP Console & Dashboard: console-dashboard.md
-- Storage: storage.md
-- Virtual Machines: vm.md
-- Websites: website.md
+  #- Getting Started: getting-started.md
+  # - GCP Accounts and IAM: accounts-iam.md
+  # - GCP Console & Dashboard: console-dashboard.md
+  # - Storage: storage.md
+  # - Virtual Machines: vm.md
+  # - Websites: website.md
 - Analytics: analytics/analytics.md
 - Command Line Interface: cli/cli.md
-- Examples for Common Tasks: common-tasks.md
-- GCP Best Practices: best-practices.md
-- Troubleshooting: troubleshooting/troubleshooting.md
+  # - Examples for Common Tasks: common-tasks.md
+  # - GCP Best Practices: best-practices.md
+  # - Troubleshooting: troubleshooting/troubleshooting.md
 - Resources: resources.md
 # ------- configuration properties ---------------
 copyright:  Copyright Open Water Foundation
