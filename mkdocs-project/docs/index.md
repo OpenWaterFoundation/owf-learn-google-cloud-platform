@@ -38,7 +38,3 @@ The OWF GCP website content and examples are licensed under the
 ## Source Repository on GitHub ##
 
 The source files for this documentation are maintained in a GitHub repository:  [owf-learn-google-cloud-platform](https://github.com/OpenWaterFoundation/owf-learn-google-cloud-platform).
-
-## Release Notes ##
-
-See the [Release Notes in the GitHub project repository](https://github.com/OpenWaterFoundation/owf-learn-google-cloud-platform#release-notes).

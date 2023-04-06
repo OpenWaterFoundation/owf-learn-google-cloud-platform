@@ -2,13 +2,19 @@
 
 This documentation explains how to configure and use Google Analytics.
 
-* [Introduction](#introduction)
-* [Set Up Account](#set-up-account)
-* [Google Analytics 4 Setup](#google-analytics-4-setup)
-* [Add Google Analytics 4 property (to a site that already has Analytics)](#add-google-analytics-4-property-to-a-site-that-already-has-analytics)
-* [Additional Google Analytics 4 Configuration](#additional-google-analytics-4-configuration)
-    + [Filter Out Publishing Organization](#filter-out-publishing-organization)
-    + [Handle Subdomains](#handle-subdomains)
+*   [Introduction](#introduction)
+*   [Set Up Account](#set-up-account)
+*   [Google Analytics 4 Setup](#google-analytics-4-setup)
+*   [Add Google Analytics 4 Property to a Site](#add-google-analytics-4-property-to-a-site)
+    +   [HTML Page](#html-page)
+    +   [Angular Application](#angular-application)
+    +   [MkDocs Documentation](#mkdocs-documentation)
+    +   [WordPress Website](#wordpress-website)
+*   [Additional Google Analytics 4 Configuration](#additional-google-analytics-4-configuration)
+    +   [Filter Out Publishing Organization](#filter-out-publishing-organization)
+    +   [Handle Subdomains](#handle-subdomains)
+*   [Troubleshooting](#troubleshooting)
+*   [Resources](#resources)
 
 ---------
 
@@ -30,7 +36,7 @@ The property must be properly handled.
 
 To use Google Analytics, first set up an account.
 
-* [Get started with data analytics](https://support.google.com/analytics/answer/9306384?hl=en)
+*   [Get started with data analytics](https://support.google.com/analytics/answer/9306384?hl=en)
 
 After setting up an account, a URL similar to the following will show the ***Analytics*** dashboard.
 
@@ -40,8 +46,8 @@ https://analytics.google.com/analytics/web/
 
 Additional tasks include:
 
-* [Migrate Users from UA to GA4](https://support.google.com/analytics/answer/11894572) - although
-  this seems to be done automatically when Google Analytics 4 is set up?
+*   [Migrate Users from UA to GA4](https://support.google.com/analytics/answer/11894572) - although
+    this seems to be done automatically when Google Analytics 4 is set up?
 
 ## Google Analytics 4 Setup ##
 
@@ -107,15 +113,50 @@ as shown below.
 Web Stream Details for Active Data Collection (<a href="../web-stream-details.png">see full-size image</a>)
 </p>**
 
-## Add Google Analytics 4 property (to a site that already has Analytics) ##
+## Add Google Analytics 4 property to a Site ##
 
-The following documentation to add analytics to a site that is already using analytics,
-such as the older Universal property:
+The following documentation to add analytics to a site.
 
-* [Add a Google Analytics 4 property (to a site that already has Analytics)](https://support.google.com/analytics/answer/9744165?hl=en&utm_id=ad)
+See the following background information if the site that is already using analytics, such as the older Universal property:
 
-If using MkDocs, WordPress, or other website authoring tool,
-see the documentation for those tools for information on configuring Google Analytics 4.
+*   [Add a Google Analytics 4 property (to a site that already has Analytics)](https://support.google.com/analytics/answer/9744165?hl=en&utm_id=ad)
+
+The Google Analytics dashboard does not show the GA4 tag, which has syntax `G-XXXXXXXXXX` and instead shows an integer identifier.
+See the following to look up the GA4 tag:
+
+*   [Find your Google tag ID](https://support.google.com/analytics/answer/9539598?hl=en)
+
+### HTML Page ###
+
+To enable GA4 in HTML pages, insert code like the following in the `<head>` section of a web page.
+This must be done for every page that will use analytics.
+Replace `G-XXXXXXXXXX` with the tag for the organization.
+
+```
+<!-- Start Google Analytics 4 property. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX');
+</script>
+<!-- End Google Analytics 4 property. -->
+```
+
+### Angular Application ###
+
+The Open Water Foundation develops Angular applications.
+Additional information will be added in the future explaining how to use GA4 with an Angular application.
+
+### MkDocs Documentation ###
+
+The Open Water Foundation uses MkDocs to create documentation websites like this website.
+
+### WordPress Website ###
+
+The Open Water Foundation uses WordPress for its main website.
+Additional information will be added in the future explaining how to use GA4 with an WordPress.
 
 ## Additional Google Analytics 4 Configuration ##
 
@@ -141,3 +182,28 @@ and specific pages may be difficult to differentiate between websites.
 Therefore, it is desirable that analytics differentiate between the subdomains.
 
 **Need to explain how...**
+
+## Troubleshooting  ##
+
+The following are common troubleshooting issues.
+
+### Page Visits are Not Being Listed in Google Analytics ###
+
+**Problem:** Page visits may not be listed in the GA4 dashboard.
+
+**Possible Causes:**
+
+*   A bad GA4 configuration may cause analytics to not send results to the correct GA4 tag account.
+    Check the GA4 tag ID and configuration.
+*   Using a web browser ad blocker such as Ublock Origin may by default disable GA4.
+    The ad blocker can be disabled temporarily to verify that the GA4 configuration is correct.
+    Users may not be skilled enough or want to add Google domains as trusted sites.
+    Therefore other solutions may need to be implemented to ensoure that GA4 works with an ad blocker.
+    These solutions are not discussed here.
+
+## Resources ##
+
+See the following resources for GA4:
+
+*  [Introducing the next generation of Analytics, Google Analytics 4](https://support.google.com/analytics/answer/10089681?hl=en)
+*  [GA4 Tutorials and Resources from Two Octobers](https://twooctobers.com/blog/ga4-resources/)
