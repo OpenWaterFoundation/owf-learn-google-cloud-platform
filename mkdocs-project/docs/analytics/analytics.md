@@ -3,6 +3,7 @@
 This documentation explains how to configure and use Google Analytics.
 
 *   [Introduction](#introduction)
+    +   [Data Privacy Compliance](#data-privacy-compliance)
 *   [Set Up Account](#set-up-account)
 *   [Google Analytics 4 Setup](#google-analytics-4-setup)
 *   [Add Google Analytics 4 Property to a Site](#add-google-analytics-4-property-to-a-site)
@@ -31,6 +32,29 @@ Google does have access to the data but so does the organization that uses the s
 The first generation of Google Analytics used a "Universal Analytics property"
 whereas the current generation uses a "Google Analytics 4 property".
 The property must be properly handled.
+
+### Data Privacy Compliance ###
+
+Data privacy is a major issue and is now covered by laws such as the following:
+
+*   [Europe: General Data Protection Regulation (GDPR)](https://gdpr-info.eu/)
+*   [USA: Data Privacy Laws by State](https://pro.bloomberglaw.com/brief/data-privacy-laws-in-the-u-s/)
+    +   [Colorado Privacy Act Resource Center](https://www.huschblackwell.com/industries_services/colorado-privacy-act)
+
+It is now common that websites show a prompt to opt in/out of website features including data collection.
+This information may be stored in cookies on the device.
+
+Users may also install ad blockers and other web browser extensions that impact data collection, including Google Analytics.
+Ad blockers vary as to whether Google Analytics is blocked by default or is controlled by the user.
+
+Consequently, Google Analytics data collection may be limited to users that do not use blockers
+and who have opted in to website data collection.
+Users may also control how their location information is shared.
+
+Configuration of data collection may be specific to a website (e.g., using cookies)
+or generalized (e.g., ad blocker that affects all websites).
+These topics will be explored more in this documentation in the future as data privacy requirements
+are implemented and technologies are updated.
 
 ## Set Up Account ##
 
